@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F498632871748AFB00F6252 /* Pods_BitcoinTricker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D300031C002F6ECF8FAE16D6 /* Pods_BitcoinTricker.framework */; };
 		A74AA84420602ED4005CA933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AA84320602ED4005CA933 /* AppDelegate.swift */; };
 		A74AA84620602ED4005CA933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AA84520602ED4005CA933 /* ViewController.swift */; };
 		A74AA84E20602ED4005CA933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74AA84C20602ED4005CA933 /* LaunchScreen.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B97D752CE1ADAAD426A8C17 /* Pods-BitcoinTricker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinTricker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinTricker/Pods-BitcoinTricker.release.xcconfig"; sourceTree = "<group>"; };
+		73CBFDD1BE1F93F7BCAE9749 /* Pods-BitcoinTricker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinTricker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinTricker/Pods-BitcoinTricker.debug.xcconfig"; sourceTree = "<group>"; };
 		A74AA84020602ED4005CA933 /* BitcoinTricker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinTricker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74AA84320602ED4005CA933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A74AA84520602ED4005CA933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A74AA84F20602ED4005CA933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74AA85520602F04005CA933 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A74AA85720602F14005CA933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D300031C002F6ECF8FAE16D6 /* Pods_BitcoinTricker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinTricker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F498632871748AFB00F6252 /* Pods_BitcoinTricker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A99A9EA227607F76221DB11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73CBFDD1BE1F93F7BCAE9749 /* Pods-BitcoinTricker.debug.xcconfig */,
+				0B97D752CE1ADAAD426A8C17 /* Pods-BitcoinTricker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C0134B9AA3EECC85026137F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D300031C002F6ECF8FAE16D6 /* Pods_BitcoinTricker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A74AA83720602ED4005CA933 = {
 			isa = PBXGroup;
 			children = (
 				A74AA84220602ED4005CA933 /* BitcoinTricker */,
 				A74AA84120602ED4005CA933 /* Products */,
+				2A99A9EA227607F76221DB11 /* Pods */,
+				5C0134B9AA3EECC85026137F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A74AA85220602ED4005CA933 /* Build configuration list for PBXNativeTarget "BitcoinTricker" */;
 			buildPhases = (
+				7949B94515D2701E2C9A8C93 /* [CP] Check Pods Manifest.lock */,
 				A74AA83C20602ED4005CA933 /* Sources */,
 				A74AA83D20602ED4005CA933 /* Frameworks */,
 				A74AA83E20602ED4005CA933 /* Resources */,
+				A68AC8530EFE6A98F4B8AD01 /* [CP] Embed Pods Frameworks */,
+				E75ACB4D337BFAC02FB1BDD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7949B94515D2701E2C9A8C93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinTricker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A68AC8530EFE6A98F4B8AD01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTricker/Pods-BitcoinTricker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTricker/Pods-BitcoinTricker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75ACB4D337BFAC02FB1BDD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTricker/Pods-BitcoinTricker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A74AA83C20602ED4005CA933 /* Sources */ = {
@@ -264,6 +347,7 @@
 		};
 		A74AA85320602ED4005CA933 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CBFDD1BE1F93F7BCAE9749 /* Pods-BitcoinTricker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -279,6 +363,7 @@
 		};
 		A74AA85420602ED4005CA933 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B97D752CE1ADAAD426A8C17 /* Pods-BitcoinTricker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
